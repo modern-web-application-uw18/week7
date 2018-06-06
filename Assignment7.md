@@ -1,7 +1,7 @@
 # Week 7 Assignment
 
 * The name of your project: **new-album-release-app**
-* An elevator pitch: *This application will search the Discogs database for new releases by any artist the user searches for.*
+* An elevator pitch: *This application will search the Discogs database for new music releases by any artist the user searches for.*
 * [Wireframes](https://wireframe.cc/NUz3OM)
 * A list of dependencies:
   * Discogs API
@@ -9,7 +9,7 @@
   * npm
   * Bootstrap
   * jQuery
-* A list of tasks that need to be completed:
+* A list of tasks that need to be completed is on my [Trello project board](https://trello.com/b/0xmhOeBs/new-album-release-app) and listed here:
   * Setup `create-react-app` scaffold
   * Render a search box
   * Write a search function
