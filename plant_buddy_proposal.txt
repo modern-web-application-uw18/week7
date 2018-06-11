@@ -1,0 +1,26 @@
+The proposed React app is a plant watering schedule tracker – a user would enter a plant, maybe upload a picture, and put in a watering schedule (every x days) and a date that the plant was last watered. Then the app would display all of your plants and the next day you need to water it. The "next water date" would be calculated dynamically when the app opens using the current datetime of the browser.
+
+The data would be stored in Firebase, with each user having a nested object representing all plants he or she enters into the app:
+{user: userx,
+ plants: {
+         {plant_id: 1,
+          plant_name: "cactus",
+          plant_last_watered: 06-14-2018,
+          watering_cycle: 120,
+          watering_cycle_units: day,
+          plant_image_link: some url},
+         {plant_id: 2,
+          plant_name: "pink orchid",
+          plant_last_watered: 04-15-2018,
+          watering_cycle: 15,
+          watering_cycle_units: day,
+          plant_image_link: some url},
+         }
+}
+
+Once that’s working, I’d like to add the following as nice-to-haves:
+1) Track something other than just watering, like adding fertilizer
+2) Display a different font/icon if your plant is overdue for watering
+3) Allow the user to click a button that says “just watered” which would reset the timer on the next date you need to water that plant
+4) Depending on the season, recommend adjusting the number of days between waterings
+5) Have the user tag the plant as a certain type, like cactus, then have the app make recommendations on plant care
