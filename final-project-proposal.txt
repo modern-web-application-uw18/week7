@@ -1,0 +1,72 @@
+
+BASIC PROPOSAL:
+
+Create a single player game where the user picks from shuffled cards to find matches. Sort of a on-steroids version of the children’s game Memory. 
+
+This game can appeal to older children and adults because it will be fun and it can help improve memory and problem solving skills.
+
+
+TITLE:
+Match Madness 
+
+
+MINIMUM VIABLE PRODUCT:
+-Set up create-react-scaffold
+-Put cards in database (perhaps 1 phase has them in a Json file)
+-Fetch the cards 
+-Shuffle the cards
+-Iterate through the card to render them
+-Give cards State of flipped or not flipped. 
+-Implement the correct display (flipped or not flipped)
+-Click event flips card
+-Allow user to flip 4 cards. After 4 cards flip disable the ability to flip more cards
+-Compare values of flipped cards and score points
+-Points: Sets of 2, worth 2 points. Sets of 3 are worth 4. A full set of 4 is worth 8. (possible to get 2 sets of 2)
+-Remove matched cards from board
+-Flip back over cards that aren’t part of matched sets
+-Reenable click to clip card
+-Keep running total of points in State
+-If there are less than 4 cards on the board end the game
+
+Each time a user selects 4 cards and compares their points that is called a round.
+
+STRETCH GOALS:
+
+LOGIN
+Log in through Google to play. 
+It would save user’s top scores
+
+DEATH BY SHUFFLE
+If user flips the shuffle card, the deck shuffles (Shuffle is removed from deck after it is flipped)
+
+LEVELS
+After so many number of rounds if a certain number of points are not achieved the game ends. Create multiple levels at a couple breakpoints
+
+WILDCARD
+Have a card that matches any other value flipped (it would automatically give you a Set of 2, so 2 points. It should know to to add to whatever value is already there. If two cards already match, it should know to give you 4 points, and if 3 cards already match it should know to give you 8)
+
+
+DEPENDANCIES:
+
+firebase
+react
+react-dom
+react-scripts
+react-test-renderer
+Maybe: react-router-dom
+
+
+BUILD PLAN:
+
+Week 1
+User test, refine work plan.
+
+Week 2
+Build MVP and Log-in. It looks like it would make more sense to build the MVP on top of the log-in than to try to add it later. I’ll experiment.
+
+Week 3
+Polish the presentation, move card data to database, graphics, styles clean up Code and write tests.
+
+
+
+Depending on how well things go, I will add elements from my stretch goals. I performed user testing using paper cards to test this game. Some refinement would be nice at the end to give the game a better finish. Some of that may come from finding the “happy place” in terms of placement and points for when the levels kick in and have the power to kick you out of the game.
