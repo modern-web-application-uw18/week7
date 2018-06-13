@@ -13,7 +13,7 @@ that shows the remaining time viaually (with numbers and a progress bar). There 
 available on the web and small physical ones that can be used. 
 What is missing from any timer I have seen is a supporting image of either the expectation 
 (what the child is supposed to do) OR the reward (what the child is working for). These visuals are often
-made available closeby these timers to remind the child what they are supposed to do, or their reward.
+made available close by these timers to remind the child what they are supposed to do, or their reward.
 
 This timer is unique in that it supplies images commonly used with autistic children as visual motivators
 to their end goal. The top half is a standard timer, the bottom half supplies an image that will help the child
