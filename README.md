@@ -1,43 +1,64 @@
-# Week 7 Assignment
+# JScript300-Capstone
+Capstone Project for UW JScript 300 for Cliff Johnson
 
-Your assignment for this week is to think of a capstone project idea and create a plan for the project.
+### Title of Project
+-------
+# *MFP Recipe Assistant*
 
-## Capstone Project Requirements
+### Elevator Pitch
+-------
+If you are a macro counter, you know all too well that one of the most confusing parts of using MyFitnessPal is the receipe section. This simple and easy tool makes it easy to search and find ingredients for your recipe and completes the calculations for you so you can easily add them into MyFitnessPal. 
 
-* The project must be a React application, bootstrapped with `create-react-app`
-* Your app must be created and visible in a Github repo under your Github account
-* Your app must be your own work. You may have a partner if you'd like, but be aware that you'll need to come up with a strategy for working together. Most developers on small projects create branches for new features/fixes, then merge them back into the `master` branch. Merge conflicts can arise, and you'll need to know how to resolve them.
-* Your app should be deployed onto a web server and publicly accessible
-* Your app should be polished. Some recommendations for this requirement:
-  * Remove `console.log` statements once you're finished with development
-  * Utilize CSS and images to make your app look great
-  * Check for any React errors in the console
-  * Perform some basic user testing. Have other people use your app and receive feedback on usability
-  * Keep your feature set small, so you'll have time to polish the app
+***simple, fast, straight to the point.***
 
-Other than the above requirements, you're encouraged to be creative and create something you're proud of. It can be as simple or as complex as you want, and it should be high quality.
+### An Important Note
+------
+This project is actually taking an existing tool my wife built for her business (fitness and nutritional consulting) that is currently in Excel and enhancing it and making it web-based. Sadly and unfortunately the dependencies do require paid subscriptions so this will likely never be an actual viable tool to use for the business. 
 
-## Assignment Requirements
+### Wireframes
+------
+The application will consist of three main pages
 
-Above are the requirements for the project. For this week however, you'll need to create a plan for your project. More details are to come, but you'll need to create a pull request with the following:
+1. Login Page
+[https://drive.google.com/open?id=1oyyu-FtUHhKDgT-KcvhmWXxYyymu-mFL]
 
-* The name of your project
-* An elevator pitch (a paragraph about what your project does). Be sure to address:
-  * Who will use your project
-  * The value that your project will provide to the end user
-* [Wireframes](https://en.wikipedia.org/wiki/Website_wireframe) to help visualize what your project will look like
-  * These wireframes do not have to be high-fidelity. You're free to use boxes, hand drawings, etc.
-* A list of dependencies you'll be using for your project (npm modules, APIs, Firebase, etc.)
-  * This list will likely change as you work on your project, but listing your dependencies will help you visualize the complexity of the project
-* A list of tasks that need to be completed for your project
-  * Example list of tasks for the Star Wars films example:
-    * Setup `create-react-app` scaffold
-    * Call the Star Wars API and print results
-    * Store API results in React component state
-    * Render React state
-* A plan for the next 3 weeks and what you plan to accomplish each week
+2. My Recipes
+[https://drive.google.com/open?id=1zwyH_2JKiR5BZQidbizT6_FRbjC2MqiK]
 
-## Recommendations
+3. New Recipe
+[https://drive.google.com/file/d/1zexE-4VRSJxQZwnEtbXrpxWVDeGbq-uj/view?usp=sharing]
 
-* Keep the scope of your project small. A small, completed project is much better than a large, incomplete project. You can create a list of "nice to have" features that you can work on if you have time.
-* Ensure you have plenty of buffer time in your schedule. Life events pop up, and tasks usually take longer than initially estimated.
+### Project Dependencies
+CSS/Styling
+- react-grid-system
+- Atlaskit by Atlassian
+
+API for Retrieving Ingredients
+- Edamam https://developer.edamam.com/food-database-api 
+
+Database and User Auth
+- Firebase
+
+**Note-** Firebase is a feature that would be nice to have. Additionally, for the pages, My Recipes is a desired feature but not necessary for the overall scope of this project. A page that simply is able to make and return the API calls for the ingredients and compute the values would be fine for a first run. 
+
+### Tasks for Completion
+1. Bootstrap create-react-app
+2. Deploy application
+3. Template NewRecipe component with static data to develop overall design and configuration
+4. Create functions to handle calculations for NewRecipe component using manual input data for each table element and total calculations. 
+** This satisfies minimum requirements for application. **
+5. Setup API fetch call to retrieve JSON from Edamam API search
+6. Enhance API fetch call to retrieve autosuggestions based on input as typed (i.e. user enters 7 characters, perform call to return list of possibilities given input)
+7. If step 5 is successful, work on transitioning API call to microservice
+8. If step 6 is successful, deploy microservice
+9. Refractor application to use microservice deployed in step 7
+10. Implement firebase Google oAuth to login user via Login Page component
+11. Implement firebase DB to store New Recipes component
+12. Utilize firebase to retrieve stored recipes and display in My Recipes component
+
+### Plan for Completion
+##### Week 1
+Steps 1-4
+
+##### Week 2 
+If steps 1-4 completed successfully, work on as much of steps 5-12 as possible
