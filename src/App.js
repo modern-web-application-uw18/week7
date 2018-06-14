@@ -9,7 +9,6 @@ export default class HospitalList extends React.Component {
 	hospital500001: [],
 	hospital500005: [],
 	hospital500008: [],
-	hospital500052: [],
 	hospital500088: []
   }
 
@@ -51,13 +50,6 @@ export default class HospitalList extends React.Component {
         this.setState({ hospital500008 });
 		console.log(hospital500008);
 			})
-  //Group Health:
-	axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500052`)
-      .then(res => {
-        const hospital500052 = res.data;
-        this.setState({ hospital500052 });
-		console.log(hospital500052);
-      })	  
   //Valley Medical Center:
 	axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500088`)
       .then(res => {
@@ -139,20 +131,6 @@ export default class HospitalList extends React.Component {
 		<li>Denominator: {UWMCList.denominator}</li>
 		<li>Percentage higher: {UWMCList.higher_estimate}</li>
 		<li>Percentage lower: {UWMCList.lower_estimate}</li>
-		</ul>		
-		)}
-		</div>
-
-	<div id="grouphealth">
-	<h3>Group Health</h3>
-        { this.state.hospital500052.map(GroupHealthList =>
-		<ul>		
-		<li>Category: {GroupHealthList.measure_name}</li>
-		<li>Score: {GroupHealthList.score}</li>
-		<li>Compared to national average: {GroupHealthList.compared_to_national}</li>
-		<li>Denominator: {GroupHealthList.denominator}</li>
-		<li>Percentage higher: {GroupHealthList.higher_estimate}</li>
-		<li>Percentage lower: {GroupHealthList.lower_estimate}</li>
 		</ul>		
 		)}
 		</div>
