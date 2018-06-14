@@ -8,12 +8,12 @@
   b) npm
   b) google chart to display stock permforance database
   c) API for companies stock data,
-  d)  firebase database to hold user stocks,
+  d)  firebase database to hold user list of companies,
 5) List of tasks that need to be completed:
   a) create-react-app,
   b) create google chart to display stock permforance database
   c) create components to fetch stock  data from API,
-  d) create firebase database to hold user stocks,
+  d) create firebase database to hold user list of companies,
   e) Create input box to allow users to add/remove companies to/from their list
   e) deploy the firebase database,
   f) deploy the Website_wireframe
