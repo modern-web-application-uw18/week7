@@ -28,7 +28,7 @@ Future Ada is a non-profit startup, focusing on Securing space for women and non
 
 ![high fidelity wireframe](images/FutureAda.png)
 
-★ high-fidelity composition on InVision
+★ [View high-fidelity composition on InVision](https://invis.io/BRKX7C0U4GS#/303030945_HOME)
 
 
 ### 🐙 Dependencies
@@ -38,16 +38,16 @@ Future Ada is a non-profit startup, focusing on Securing space for women and non
 
 ### 🦉 Task List
 
-* A list of tasks that need to be completed for your project
-* Setup `create-react-app` scaffold add BrowserRouter 
-* Render React state
-* Design Wireframe layout
-* Develop Content for pages
-* Create design patterns html css
-* Develop page components
-* Pull twitter news feed
-* Setup VPS environment
-* Deploy to server via git
+A list of tasks that need to be completed for your project.
+- [ ] Setup `create-react-app` scaffold add BrowserRouter 
+- [ ] Render React state
+- [x] Design Wireframe layout
+- [x] Develop Content for pages
+- [ ] Create design patterns html css
+- [ ] Develop page components
+- [ ] Pull twitter news feed
+- [ ] Setup VPS environment
+- [ ] Deploy to server via git
 
 #### Bonus
 * Connect to facebook to pull realtime events
