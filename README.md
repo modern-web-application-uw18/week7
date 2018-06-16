@@ -21,23 +21,35 @@ Other than the above requirements, you're encouraged to be creative and create s
 
 Above are the requirements for the project. For this week however, you'll need to create a plan for your project. More details are to come, but you'll need to create a pull request with the following:
 
-* The name of your project
-* An elevator pitch (a paragraph about what your project does). Be sure to address:
-  * Who will use your project
-  * The value that your project will provide to the end user
-* [Wireframes](https://en.wikipedia.org/wiki/Website_wireframe) to help visualize what your project will look like
-  * These wireframes do not have to be high-fidelity. You're free to use boxes, hand drawings, etc.
-* A list of dependencies you'll be using for your project (npm modules, APIs, Firebase, etc.)
-  * This list will likely change as you work on your project, but listing your dependencies will help you visualize the complexity of the project
-* A list of tasks that need to be completed for your project
-  * Example list of tasks for the Star Wars films example:
-    * Setup `create-react-app` scaffold
-    * Call the Star Wars API and print results
-    * Store API results in React component state
-    * Render React state
-* A plan for the next 3 weeks and what you plan to accomplish each week
+# Project Codename: Future Ada
+Future Ada is a non-profit startup, focusing on Securing space for women and non-binary individuals in the STEAM fields.
 
-## Recommendations
+### 📝 Wireframes
 
-* Keep the scope of your project small. A small, completed project is much better than a large, incomplete project. You can create a list of "nice to have" features that you can work on if you have time.
-* Ensure you have plenty of buffer time in your schedule. Life events pop up, and tasks usually take longer than initially estimated.
+![high fidelity wireframe](images/FutureAda.png)
+
+★ [View high-fidelity composition on InVision](https://invis.io/BRKX7C0U4GS#/303030945_HOME)
+
+
+### 🐙 Dependencies
+* Create React APP using `npm install -g create-ceact-app`
+* [react-twitter-widgets](https://www.npmjs.com/package/react-twitter-widgets) using `npm install --save react-twitter-widgets`
+
+
+### 🦉 Task List
+
+A list of tasks that need to be completed for your project.
+- [ ] Setup `create-react-app` scaffold add BrowserRouter 
+- [ ] Render React state
+- [x] Design Wireframe layout
+- [x] Develop Content for pages
+- [ ] Create design patterns html css
+- [ ] Develop page components
+- [ ] Pull twitter news feed
+- [ ] Setup VPS environment
+- [ ] Deploy to server via git
+
+#### Bonus
+* Connect to facebook to pull realtime events
+
+
