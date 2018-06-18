@@ -1,4 +1,4 @@
-# Project Plan
+# Final Project Plan
 
 ## Project Name: 
 
