@@ -66,12 +66,12 @@ export default class HospitalList extends React.Component {
 		<div id="buttons">
 			{/*navigation bar*/}
 			<ul className="hospitalnav">
-				<li><a href="#harborview">Harborview Medical Center</a></li>
-				<li><a href="#swedish">Swedish Hospital</a></li>
-				<li><a href="#northwest">Northwest Hospital</a></li>
-				<li><a href="#virginiamason">Virginia Mason</a></li>
-				<li><a href="#uwmc">UW Medical Center</a></li>
-				<li><a href="#valley">Valley Medical Center</a></li>
+				<li><a href="#harborviewImg">Harborview Medical Center</a></li>
+				<li><a href="#swedishImg">Swedish Hospital</a></li>
+				<li><a href="#northwestImg">Northwest Hospital</a></li>
+				<li><a href="#virginiamasonImg">Virginia Mason</a></li>
+				<li><a href="#uwmcImg">UW Medical Center</a></li>
+				<li><a href="#valleyImg">Valley Medical Center</a></li>
 			</ul>
 		</div>
 		<div id="topcontainer">
@@ -87,7 +87,7 @@ export default class HospitalList extends React.Component {
 		<div id="hospitalcontainer">
 		{/*and now we write the parts of the returned data that we're interested in to unordered lists:*/}	
 		<div className="hospital" id="harborview">
-			<img src={harborviewImg} alt={"Harborview Medical Center"}/> 
+			<img id="harborviewImg" src={harborviewImg} alt={"Harborview Medical Center"}/> 
 			{ this.state.hospital500064.map(harborviewList =>
 			<ul className="data-ul">
 				<li class="hospitalname">Harborview Medical Center</li>		
@@ -102,7 +102,7 @@ export default class HospitalList extends React.Component {
 			</div>
 			
 		<div className="hospital" id="swedish">
-			<img src={swedishImg} alt={"Swedish"}/> 
+			<img id="swedishImg" src={swedishImg} alt={"Swedish"}/> 
 			{ this.state.hospital500027.map(swedishList =>
 			<ul className="data-ul">
 				<li className="hospitalname">Swedish Hospital</li>			
@@ -118,7 +118,7 @@ export default class HospitalList extends React.Component {
 			
 		
 		<div class="hospital" id="northwest">
-			<img src={northwestImg} alt={"Northwest Hospital"}/> 
+			<img id="northwestImg" src={northwestImg} alt={"Northwest Hospital"}/> 
 			{ this.state.hospital500001.map(NorthwestList =>
 			<ul class="data-ul">
 				<li class="hospitalname">Northwest Hospital</li>		
@@ -133,7 +133,7 @@ export default class HospitalList extends React.Component {
 			</div>
 
 		<div class="hospital" id="virginiamason">
-			<img src={virginiamasonImg} alt={"Virginia Mason"}/> 
+			<img id="virginiamasonImg" src={virginiamasonImg} alt={"Virginia Mason"}/> 
 			{ this.state.hospital500005.map(VirginiaList =>
 			<ul class="data-ul">
 				<li class="hospitalname">Virginia Mason</li>
@@ -148,7 +148,7 @@ export default class HospitalList extends React.Component {
 			</div>
 
 		<div class="hospital" id="uwmc">
-			<img src={uwmcImg} alt={"uwmc"}/> 
+			<img id="uwmcImg" src={uwmcImg} alt={"uwmc"}/> 
 			{ this.state.hospital500008.map(UWMCList =>
 			<ul class="data-ul">
 				<li class="hospitalname">UW Medical Center</li>		
@@ -163,7 +163,7 @@ export default class HospitalList extends React.Component {
 			</div>
 
 		<div class="hospital" id="valley">
-			<img src={valleyImg} alt={"Valley Medical Center"}/> 
+			<img id="valleyImg" src={valleyImg} alt={"Valley Medical Center"}/> 
 			{ this.state.hospital500088.map(ValleyList =>
 			<ul class="data-ul">
 				<li class="hospitalname">Valley Medical Center</li>		
