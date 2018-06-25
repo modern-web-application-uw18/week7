@@ -1,0 +1,179 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#topcontainer {
+	width: 100%;
+	margin-top: 100px;
+}
+
+#hospitalcontainer {
+	width: 100%;
+	margin-top: 100px;
+	background-color: #ffffff;
+	
+}
+
+#infoDivLeft {
+	width: 40%;
+	float: left;
+}
+
+#infoDivRight {
+	width: 52%;
+	float: right;
+	border-left: 5px solid #5997e8;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+#headline {
+	font-size: 6rem;
+	text-align: center;
+	color: #e66e58;
+}
+
+#subhead {
+	font-size: 1.6rem;
+	text-align: left;
+	color: #e66e58;
+}
+
+#subsubhead {
+	font-size: 1.3rem;
+	text-align: left;
+	color: #181818;
+}
+
+#explanation {
+	font size: 1rem;
+	text-align: left;
+	color: #181818;
+}
+
+img {
+	border: 5px solid #5997e8;
+	border-radius: 10px;
+	margin-top: 50px;
+	width: 98%
+}
+
+ul.hospitalnav {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5997e8;	
+}
+
+ul.hospitalnav li {
+	float: left;
+}
+
+ul.hospitalnav li a {
+    display: block;
+    color: #110202;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.hospitalnav li a:hover {
+	background-color: #ffffff;
+}
+
+ul.hospitalnav li a:active {
+	background-color: #ffffff;
+}
+
+li.category {
+	list-style-type: none;
+	font-size: 1.2rem;
+	background-color: #5997e8;
+}
+
+li.hospitalname {
+	list-style-type: none;
+	font-size: 1.5rem;
+	background-color: #5997e8;
+}
+
+#container {
+	background-color: #ffffff;
+}
+
+.data-ul {
+	list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+.data-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-ul li:last-child {
+    border-bottom: none
+}
+
+.hospital {
+	width: 45%;
+	margin: 30px 0px 60px 5px;
+	padding: 5px;
+	background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 850px){
+    ul.hospitalnav li.right, 
+    ul.hospitalnav li {
+	float: none;
+		}
+	.hospital {
+	width:100%;
+		}
+	img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	}
+	#infoDivRight {float: none;
+	width: 100%;
+	border: none;
+	padding-left: none;
+	padding: 5px;
+	}
+	
+	#infoDivLeft {float: none;
+	border-right: none;
+	padding: 5px;
+	width: 100%;
+	margin-top: 300px;
+	}
+
+	#subhead {
+	text-align: center;
+	margin: 5px;
+	}
+
+	#subsubhead {
+	text-align: center;
+	margin: 5px;
+	}
+
+	#explanation {
+	text-align: center;
+	margin: 5px;
+	}
+	#headline {
+	font-size: 2.5rem;
+	text-align: center;
+	}
+}
