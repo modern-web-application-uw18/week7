@@ -14,21 +14,21 @@ html {
 }
 
 #infoDivLeft {
-	width: 41%;
+	width: 40%;
 	float: left;
-	border-right: 5px solid #5997e8;
 	padding-right: 10px;
 }
 
 #infoDivRight {
-	width: 56%;
+	width: 55%;
 	float: right;
+	border-left: 5px solid #5997e8;
 	padding: 5px;
 }
 
 #headline {
-	font-size: 8rem;
-	text-align: right;
+	font-size: 6rem;
+	text-align: center;
 	color: #e66e58;
 }
 
@@ -125,35 +125,49 @@ li.hospitalname {
 	background-color: #ffffff;
 }
 
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 850px){
     ul.hospitalnav li.right, 
-    ul.hospitalnav li {float: none;}
-	.hospital {width:90%;}
-	img {width:90%;}
+    ul.hospitalnav li {
+	float: none;
+		}
+	.hospital {
+	width:100%;
+		}
+	img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	}
 	#infoDivRight {float: none;
 	width: 100%;
 	padding: 5px;
-}
+	}
+	
 	#infoDivLeft {float: none;
 	border-right: none;
-	padding-right: none;
+	padding: 5px;
 	width: 100%;
 	margin-top: 300px;
 	}
 
 	#subhead {
 	text-align: center;
-}
+	margin: 5px;
+	}
 
 	#subsubhead {
 	text-align: center;
-}
+	margin: 5px;
+	}
 
 	#explanation {
 	text-align: center;
-}
+	margin: 5px;
+	}
 	#headline {
 	font-size: 2rem;
 	text-align: center;
-}
+	}
 }
