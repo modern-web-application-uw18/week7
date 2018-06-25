@@ -20,37 +20,37 @@ export default class HospitalList extends React.Component {
   }
 
   componentDidMount() {
-	//fetching Harborview data from the Medicare database and pushing it to the appropriate array:
+	//fetching Harborview data from the Medicare database and updating the state of the appropriate array:
     axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500064`)
       .then(res => {
         const hospital500064 = res.data;
         this.setState({ hospital500064 });
 			})
-	//fetching Swedish data from the Medicare database and pushing it to the appropriate array:		
+	//fetching Swedish data from the Medicare database and updating the state of the appropriate array:		
 	axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500027`)
       .then(res => {
         const hospital500027 = res.data;
         this.setState({ hospital500027 });
 			})
-	//fetching Northwest data from the Medicare database and pushing it to the appropriate array:		
+	//fetching Northwest data from the Medicare database and updating the state of the appropriate array:		
 	axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500001`)
       .then(res => {
         const hospital500001 = res.data;
         this.setState({ hospital500001 });
 			})
-	//fetching Virginia Mason data from the Medicare database and pushing it to the appropriate array:
+	//fetching Virginia Mason data from the Medicare database and updating the state of the appropriate array:
 	axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500005`)
       .then(res => {
         const hospital500005 = res.data;
         this.setState({ hospital500005 });
 			})
-	//fetching UWMC data from the Medicare database and pushing it to the appropriate array:  
+	//fetching UWMC data from the Medicare database and updating the state of the appropriate array:  
 	axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500008`)
       .then(res => {
         const hospital500008 = res.data;
         this.setState({ hospital500008 });
 			})	  
-	//fetching Valley Medical Center data from the Medicare database and pushing it to the appropriate array:
+	//fetching Valley Medical Center data from the Medicare database and updating the state of the appropriate array:
 	axios.get(`https://data.medicare.gov/resource/ukfj-tt6v.json?provider_id=500088`)
       .then(res => {
         const hospital500088 = res.data;
@@ -65,7 +65,7 @@ export default class HospitalList extends React.Component {
 	<div id="container">
 		<div id="buttons">
 			{/*navigation bar*/}
-			<ul class="hospitalnav">
+			<ul className="hospitalnav">
 				<li><a href="#harborview">Harborview Medical Center</a></li>
 				<li><a href="#swedish">Swedish Hospital</a></li>
 				<li><a href="#northwest">Northwest Hospital</a></li>
@@ -74,12 +74,22 @@ export default class HospitalList extends React.Component {
 				<li><a href="#valley">Valley Medical Center</a></li>
 			</ul>
 		</div>
-
+		<div id="topcontainer">
+		<div id="infoDivLeft">
+		<h1 id="headline">SeaAHD</h1>
+		</div>
+		<div id="infoDivRight">
+		<h2 id="subhead">Seattle Area Hospital Dashboard</h2>
+		<h3 id="subsubhead">Quickly compare Seattle area hospitals:</h3>
+		<p id="explanation">This application is designed to provide a quick overview of the comparative quality of selected Seattle-area hospitals. Drawing on the <a href="https://data.medicare.gov/Hospital-Compare/Complications-and-Deaths-Hospital/ynj2-r877/data" target="_blank" rel="noopener noreferrer">Medicare Complications and Deaths database</a> that provides data on factors like hospital-acquired infection rates, accidental deaths, and treatment errors, it provides simple, dashboard-level metrics.</p>
+		</div>
+		</div>
+		<div id="hospitalcontainer">
 		{/*and now we write the parts of the returned data that we're interested in to unordered lists:*/}	
-		<div class="hospital" id="harborview">
+		<div className="hospital" id="harborview">
 			<img src={harborviewImg} alt={"Harborview Medical Center"}/> 
 			{ this.state.hospital500064.map(harborviewList =>
-			<ul class="data-ul">
+			<ul className="data-ul">
 				<li class="hospitalname">Harborview Medical Center</li>		
 				<li class="category">Category: {harborviewList.measure_name}</li>
 				<li>Score: {harborviewList.score}</li>
@@ -91,12 +101,12 @@ export default class HospitalList extends React.Component {
 			)}	
 			</div>
 			
-		<div class="hospital" id="swedish">
+		<div className="hospital" id="swedish">
 			<img src={swedishImg} alt={"Swedish"}/> 
 			{ this.state.hospital500027.map(swedishList =>
-			<ul class="data-ul">
-				<li class="hospitalname">Swedish Hospital</li>			
-				<li class="category">Category: {swedishList.measure_name}</li>
+			<ul className="data-ul">
+				<li className="hospitalname">Swedish Hospital</li>			
+				<li className="category">Category: {swedishList.measure_name}</li>
 				<li>Score: {swedishList.score}</li>
 				<li>Compared to national average: {swedishList.compared_to_national}</li>
 				<li>Denominator: {swedishList.denominator}</li>
@@ -165,8 +175,9 @@ export default class HospitalList extends React.Component {
 				<li>Percentage lower: {ValleyList.lower_estimate}</li>
 			</ul>		
 			)}
-			</div>		
+			</div>
 		</div>
+	</div>
     )
   }
 }
