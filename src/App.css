@@ -1,28 +1,84 @@
-.App {
-  text-align: center;
+html {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+img {
+	border: 5px solid #add8e6;
+	border-radius: 10px;
+	margin-top: 50px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+ul.hospitalnav {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #add8e6;	
+}
+ul.hospitalnav li {
+	float: left;
 }
 
-.App-title {
-  font-size: 1.5em;
+ul.hospitalnav li a {
+    display: block;
+    color: #110202;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.App-intro {
-  font-size: large;
+ul.hospitalnav li a:hover {
+	background-color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+ul.hospitalnav li a:active {
+	background-color: #ffffff;
+}
+
+li.category {
+	list-style-type: none;
+	font-size: 1.2rem;
+	background-color: #add8e6;
+}
+
+li.hospitalname {
+	list-style-type: none;
+	font-size: 1.5rem;
+	background-color: #add8e6;
+}
+
+#container {
+	background-color: #ffffff;
+}
+
+.data-ul {
+	list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+.data-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-ul li:last-child {
+    border-bottom: none
+}
+
+.hospital {
+	width: 70%;
+	margin: 60px 0px 0px 5px;
+	padding: 5px;
+	background-color: #ffffff;
+}
+
+@media screen and (max-width: 600px){
+    ul.hospitalnav li.right, 
+    ul.hospitalnav li {float: none;}
+	.hospital {width:90%;}
+	img {width:90%;}
 }
