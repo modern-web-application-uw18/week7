@@ -15,7 +15,7 @@ Your assignment for this week is to think of a capstone project idea and create 
   * Perform some basic user testing. Have other people use your app and receive feedback on usability
   * Keep your feature set small, so you'll have time to polish the app
 
-Other than the above requirements, you're encouraged to be creative and create something you're proud of. It can be as simple or as complex as you want, and it should be high quality.
+Other than the above requirements, you're encouraged to be creative and create something you're proud of. It can be as simple or as complex as you want, and it should be high quality!
 
 ## Assignment Requirements
 
